@@ -15,3 +15,11 @@ class Estudiante(models.Model):
                 self.cedula,
                 self.edad)
 
+class ciclo(models.Model):
+    """
+    """
+    nombre = models.CharField(max_length=30)
+
+    def __str__(self):
+        return "%s" % (self.nombre)
+
